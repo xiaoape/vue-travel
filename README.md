@@ -6,10 +6,7 @@
 
 ``` bash
 # 克隆到本地
-git clone https://github.com/bailicangdu/vue2-happyfri.git
-
-# 进入文件夹
-cd vue2-happyfri
+git clone https://github.com/xiaoape/vue-travel.git
 
 # 安装依赖
 npm install 或 yarn
@@ -21,14 +18,6 @@ npm run dev
 npm run build
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-修改了文件config/index.js
-dev: {
-
-    // Paths fiddler charles
-    assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
-}
 
 ### 项目总结
 
@@ -75,11 +64,9 @@ scrollBehavior (to, from, savedPosition) {
 }
 ```
 
-2.使用vue内置的动画组件transition 
 
-3.使用solt定制组件
 
-4.使用router-link中的tag属性改变渲染标签
+2.使用router-link中的tag属性改变渲染标签
 
 ```
 <router-link
@@ -91,7 +78,7 @@ scrollBehavior (to, from, savedPosition) {
 </router-link>
 ```
 
-5.keep-alive不需要缓存的组件Detail
+3.keep-alive不需要缓存的组件Detail
 
 ```
 <keep-alive exclude="Detail">
@@ -99,13 +86,13 @@ scrollBehavior (to, from, savedPosition) {
 </keep-alive>
 ```
 
-6.真机调试配置 --host 0.0.0.0
+4.真机调试配置 --host 0.0.0.0
 
 ```javascript
     "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --config build/webpack.dev.conf.js", 
 ```
 
-7.webpack中的代理
+5.webpack中的代理
 
 ```javascript
 proxyTable: {
@@ -119,7 +106,7 @@ proxyTable: {
     },
 ```
 
-8.有关@
+6.有关@
 
 @是一个别名，在webpack中你可以找到它的配置
 
@@ -140,10 +127,8 @@ resolve: {
 ```
 
 ### 我的问题
-
-1.真机无法调试，不知道为什么有待解决
-
-2.fastclick在真机中依旧存在问题
+fastclick在真机中依旧存在问题,当我在浏览器中快速点击也会报错
+项目还在完善中。。。
 
 
 
